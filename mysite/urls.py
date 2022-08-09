@@ -17,6 +17,11 @@ from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path,include
 
+admin.site.site_header = "AK ICECREAM"
+admin.site.site_title = "AK ICECREAM"
+admin.site.index_title = "Welcome to ak ice cream"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls'))
