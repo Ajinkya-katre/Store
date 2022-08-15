@@ -19,7 +19,7 @@ def services(request):
     return HttpResponse('This is services page')
 
 def contact(request):
-    if request.method == "post":
+    if request.method == "POST":
         name = request.POST.get('name')
         email = request.POST.get('email')
         phone = request.POST.get('phone')
